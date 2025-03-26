@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat '"C:\\Users\\Max\\OneDrive\\Documents\\University\\3Year\\GL\\nuget.exe" restore test_repos.sln'
-                bat '"C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe" test_repos.sln /t:Build /p:Configuration=Release /p:RestorePackagesConfig=true'
+                bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" test_repos.sln /t:Build /p:Configuration=Release /p:RestorePackagesConfig=true'
             }
         }
         
